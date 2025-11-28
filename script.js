@@ -932,6 +932,7 @@ function stopTimer() {
 function setupImageInteractions(){
   const img = document.getElementById("kitImage");
   if (!img) return;
+  const mediaEl = img.closest('.media');
 
   let scale = 1;
   const minScale = 1;
@@ -975,11 +976,13 @@ function setupImageInteractions(){
         setOriginRelative(t.clientX, t.clientY); 
         scale = clamp(3.0, minScale, maxScale); 
         img.classList.add("zooming"); 
+        if (mediaEl) mediaEl.classList.add('zooming');
       } else { 
         scale = 1; 
         panX = 0; 
         panY = 0; 
         img.classList.remove("zooming"); 
+        if (mediaEl) mediaEl.classList.remove('zooming');
       }
       setTransform(); 
       e.preventDefault(); 
@@ -1027,6 +1030,7 @@ function setupImageInteractions(){
       panX = 0; 
       panY = 0; 
       img.classList.remove("zooming"); 
+      if (mediaEl) mediaEl.classList.remove('zooming');
       setTransform();
       // Show stamp overlay when zoom resets
       if (stampOverlay && stampOverlay.style.display === 'flex') {
@@ -1042,6 +1046,7 @@ function setupImageInteractions(){
       }
     } else {
       // Hide stamp overlay when zoomed in
+      if (mediaEl) mediaEl.classList.add('zooming');
       if (stampOverlay && stampOverlay.style.display === 'flex') {
         stampOverlay.style.visibility = 'hidden';
       }
@@ -1081,6 +1086,7 @@ function setupImageInteractions(){
       scale = 1;
       panX = 0; panY = 0;
       img.classList.remove("zooming");
+      if (mediaEl) mediaEl.classList.remove('zooming');
       img.style.transformOrigin = '50% 50%';
       // Show stamp overlay when zoom resets
       if (stampOverlay && stampOverlay.style.display === 'flex') {
@@ -1096,6 +1102,7 @@ function setupImageInteractions(){
       }
     } else {
       img.classList.add("zooming");
+      if (mediaEl) mediaEl.classList.add('zooming');
       // adjust pan to keep cursor over the same point
       panX = mouseX - rect.width/2 - imgX * scale;
       panY = mouseY - rect.height/2 - imgY * scale;
@@ -1128,6 +1135,7 @@ function setupImageInteractions(){
       setOriginRelative(e.clientX, e.clientY);
       scale = clamp(3, minScale, maxScale);
       img.classList.add('zooming');
+      if (mediaEl) mediaEl.classList.add('zooming');
       // Hide stamp overlay when zooming in
       if (stampOverlay && stampOverlay.style.display === 'flex') {
         stampOverlay.style.visibility = 'hidden';
@@ -1142,6 +1150,7 @@ function setupImageInteractions(){
       }
     } else {
       scale = 1; panX = 0; panY = 0; img.classList.remove('zooming'); img.style.transformOrigin = '50% 50%';
+      if (mediaEl) mediaEl.classList.remove('zooming');
       // Show stamp overlay when zoom resets
       if (stampOverlay && stampOverlay.style.display === 'flex') {
         stampOverlay.style.visibility = 'visible';
@@ -1161,6 +1170,7 @@ function setupImageInteractions(){
   // expose a reset function so caller can reset zoom/pan when loading new images
   img.resetZoom = function(){
     scale = 1; panX = 0; panY = 0; img.classList.remove('zooming'); img.style.transformOrigin = '50% 50%'; setTransform();
+    if (mediaEl) mediaEl.classList.remove('zooming');
     // Show stamp overlay when zoom resets
     const stampOverlay = document.getElementById('stampOverlay');
     if (stampOverlay && stampOverlay.style.display === 'flex') {

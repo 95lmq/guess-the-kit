@@ -29,7 +29,7 @@ body{
 .topbar .title{font-size:1.25rem;font-weight:700}
 .topbar .room{color:var(--muted)}
 
-.layout{display:flex;gap:24px;padding:32px;max-width:95vw;width:100%;margin:0 auto;box-sizing:border-box;max-height:95vh}
+.layout{display:flex;gap:24px;padding:32px;max-width:95vw;width:100%;margin:0 auto;box-sizing:border-box}
 .stage{flex:1}
 .panel{width:260px;background:var(--panel);border-radius:10px;padding:16px}
 .panel h3{margin:0 0 8px 0}
@@ -89,6 +89,7 @@ body{
   and let the media container center the image both ways. */
 .playArea{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;flex:1 1 auto;min-height:0}
 .media{position:relative;width:100%;max-width:1200px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;flex:1 1 auto;min-height:0;overflow:hidden}
+.media.zooming{overflow:visible}
 
 /* When a result box is present, reduce the image bottom margin so image->result stays small
    but keep the larger gap when result is absent so image->controls (Reveal/Next) has more space */
@@ -184,7 +185,7 @@ body{
 
 @media(max-width:900px){
   .topbar{padding:8px 12px}
-  .layout{flex-direction:column;padding:4px;max-width:100vw;gap:12px;max-height:100vh}
+  .layout{flex-direction:column;padding:4px;max-width:100vw;gap:12px}
   .panel{width:100%}
   .media{max-width:100%;margin-bottom:8px}
   .stage-inner {
@@ -215,16 +216,13 @@ body{
   }
   
   /* Image with flexible height - can shrink to fit available space */
- /* #kitImage {
-    max-height:100vh;
-    height:auto;
-    flex-shrink:1;
-  } */
   
   /* Media container can shrink */
   .media {
     flex-shrink:1;
     min-height:0;
+    /* Prevent tall images from consuming full viewport height and pushing controls off-screen */
+    max-height: 60vh;
   }
   
   /* Center playArea content - it will grow/shrink as needed */
