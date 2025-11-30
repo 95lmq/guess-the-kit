@@ -222,7 +222,7 @@ body{
     flex-shrink:1;
     min-height:0;
     /* Prevent tall images from consuming full viewport height and pushing controls off-screen */
-    max-height: 60vh;
+    max-height: 50vh;
   }
   
   /* Center playArea content - it will grow/shrink as needed */
@@ -234,6 +234,7 @@ body{
     justify-content: center;
     flex: 1 1 auto;
     min-height: 0;
+    max-height: 75vh;
     gap: 8px;
   }
   
@@ -241,8 +242,8 @@ body{
   .controls {
     position:relative;
     margin:0;
-    flex-shrink:0;
-    max-height: 50vh;
+    flex-shrink:1;
+    max-height: 40vh;
     height: auto !important;
   }
   
