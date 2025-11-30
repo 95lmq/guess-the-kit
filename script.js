@@ -27,7 +27,7 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-// Helper function to filter available kits (DRY principle)
+// Helper function to filter available kits
 function getAvailableKits() {
   return matchedKits.filter(kit => {
     // Exclude kits that have already been used
@@ -124,6 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const roundSizeInput = document.getElementById("roundSizeInput");
   const submitGuessBtn = document.getElementById("submitGuessBtn");
   const guessInput = document.getElementById("guessInput");
+  const faqBtn = document.getElementById("faqBtn");
+  const splashFaqBtn = document.getElementById("splashFaqBtn");
+  const faqModal = document.getElementById("faqModal");
+  const closeFaqBtn = document.getElementById("closeFaqBtn");
 
   revealBtn.addEventListener("click", () => {
     const imgEl = document.getElementById("kitImage");
@@ -168,6 +172,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cancelSettingsBtn.addEventListener("click", () => {
     closeSettings();
+  });
+
+  faqBtn.addEventListener("click", () => {
+    openFaq();
+  });
+
+  splashFaqBtn.addEventListener("click", () => {
+    openFaq();
+  });
+
+  closeFaqBtn.addEventListener("click", () => {
+    closeFaq();
+  });
+
+  // Close FAQ when clicking outside the content
+  faqModal.addEventListener("click", (e) => {
+    if (e.target === faqModal) {
+      closeFaq();
+    }
   });
 
   timerSlider.addEventListener("input", (e) => {
@@ -830,6 +853,16 @@ function closeSettings() {
   modal.classList.add("hidden");
 }
 
+function openFaq() {
+  const modal = document.getElementById("faqModal");
+  modal.classList.remove("hidden");
+}
+
+function closeFaq() {
+  const modal = document.getElementById("faqModal");
+  modal.classList.add("hidden");
+}
+
 function saveSettings() {
   const slider = document.getElementById("timerSlider");
   const roundSizeInput = document.getElementById("roundSizeInput");
@@ -851,8 +884,8 @@ function saveSettings() {
   localStorage.setItem('guessTheKitRoundSize', roundSize);
   localStorage.setItem('guessTheKitGameMode', gameMode);
   
-  // Update controls to match new mode
-  updateControlsForMode();
+  // Don't update controls immediately - wait until new round starts
+  // updateControlsForMode();
   
   closeSettings();
 }

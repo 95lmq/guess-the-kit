@@ -29,6 +29,36 @@ body{
 .topbar .title{font-size:1.25rem;font-weight:700}
 .topbar .room{color:var(--muted)}
 
+.info-btn {
+  width: 44px;
+  height: 44px;
+  background: #FFCF00;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.info-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+
+.info-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+.info-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
 .layout{display:flex;gap:24px;padding:32px;max-width:95vw;width:100%;margin:0 auto;box-sizing:border-box}
 .stage{flex:1}
 .panel{width:260px;background:var(--panel);border-radius:10px;padding:16px}
@@ -366,6 +396,40 @@ body{
   z-index: 3;
 }
 
+.splash-info-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  background: #FFCF00;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  z-index: 4;
+}
+
+.splash-info-btn svg {
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+
+.splash-info-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+.splash-info-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
 .splash-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -440,6 +504,120 @@ body{
   .splash-content::before {
     animation: none;
   }
+}
+
+/* FAQ Modal Styles */
+.faq-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  overflow-y: auto;
+}
+
+.faq-modal.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.faq-content {
+  position: relative;
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: 2px solid rgba(255, 207, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.close-btn svg {
+  width: 20px;
+  height: 20px;
+  color: var(--white);
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 28px 0;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 4px solid var(--yellow);
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(4px);
+}
+
+.faq-question {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.faq-answer a {
+  color: var(--accent-2);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.faq-answer a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
 }
 
 /* Settings Modal Styles */
