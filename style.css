@@ -397,11 +397,11 @@ body{
 }
 
 .splash-info-btn {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
+  position: fixed;
+  top: 18px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
   background: #FFCF00;
   border: 2px solid #000;
   border-radius: 8px;
@@ -411,12 +411,12 @@ body{
   justify-content: center;
   transition: all 0.2s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-  z-index: 4;
+  z-index: 1100;
 }
 
 .splash-info-btn svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   color: #000;
 }
 
@@ -607,12 +607,16 @@ body{
   font-size: 1rem;
   color: var(--muted);
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .faq-answer a {
   color: var(--accent-2);
   text-decoration: none;
   transition: color 0.2s ease;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .faq-answer a:hover {
