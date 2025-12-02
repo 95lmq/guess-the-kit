@@ -294,6 +294,7 @@ function loadImage() {
   const stampOverlay = document.getElementById('stampOverlay');
   if (stampOverlay) {
     stampOverlay.style.display = 'none';
+    stampOverlay.style.visibility = 'visible'; // Reset visibility for next image
   }
   
   updateControlsForMode();
