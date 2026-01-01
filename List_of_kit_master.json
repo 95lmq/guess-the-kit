@@ -1,7 +1,7 @@
 [
   {
     "sys_combo_id": 1,
-    "Name_1": "2A29 ",
+    "Name_1": "2A29 ", 
     "Name_2": "MT-12",
     "Name_3": null,
     "Name_4": null,
@@ -1555,7 +1555,7 @@
     "Name_2": null,
     "Name_3": null,
     "Name_4": null,
-    "DISREGARD": null,
+    "DISREGARD": "YES",
     "Link": "https://www.flightglobal.com/military-uavs/aerovironment-launches-quantix-recon-a-military-variant-of-its-farm-surveying-drone/138024.article",
     "Name_5": null
   },
@@ -2245,7 +2245,7 @@
     "Name_2": null,
     "Name_3": null,
     "Name_4": null,
-    "DISREGARD": null,
+    "DISREGARD": "YES",
     "Link": "https://fr.wikipedia.org/wiki/BMO-T",
     "Name_5": null
   },
@@ -5522,8 +5522,8 @@
   {
     "sys_combo_id": 553,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "MT-12",
+    "Name_2": "MT-12",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5532,8 +5532,8 @@
   {
     "sys_combo_id": 554,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "2M-3",
+    "Name_2": "2M-3",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5542,8 +5542,8 @@
   {
     "sys_combo_id": 555,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "2B9 VASILEK",
+    "Name_2": "2B9 VASILEK",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5552,8 +5552,8 @@
   {
     "sys_combo_id": 556,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "AZP S-60",
+    "Name_2": "AZP S-60",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5562,9 +5562,9 @@
   {
     "sys_combo_id": 557,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "ZU-23 AA",
-    "Name_4": "2A13",
+    "Name_2": "ZU-23 AA",
+    "Name_3": "2A13",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
     "Name_5": null
@@ -5572,8 +5572,8 @@
   {
     "sys_combo_id": 558,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "RBU-6000 MLRS",
+    "Name_2": "RBU-6000 MLRS",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5582,7 +5582,7 @@
   {
     "sys_combo_id": 559,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
+    "Name_2": null,
     "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
@@ -5592,8 +5592,8 @@
   {
     "sys_combo_id": 560,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "AMBULANCE",
+    "Name_2": "AMBULANCE",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5602,8 +5602,8 @@
   {
     "sys_combo_id": 561,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "BPU-1",
+    "Name_2": "BPU-1",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5612,8 +5612,8 @@
   {
     "sys_combo_id": 562,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "OGON-18 MRLS",
+    "Name_2": "OGON-18 MRLS",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5622,8 +5622,8 @@
   {
     "sys_combo_id": 563,
     "Name_1": "MT-LB",
-    "Name_2": "PT-76",
-    "Name_3": "D-44",
+    "Name_2": "D-44",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
@@ -5632,8 +5632,8 @@
   {
     "sys_combo_id": 564,
     "Name_1": "MT-LB-AT",
-    "Name_2": "PT-76",
-    "Name_3": "MT-LB",
+    "Name_2": "MT-LB",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": "YES",
     "Link": null,
@@ -5642,8 +5642,8 @@
   {
     "sys_combo_id": 565,
     "Name_1": "MT-LB-S",
-    "Name_2": "PT-76",
-    "Name_3": "MT-LB",
+    "Name_2": "MT-LB",
+    "Name_3": null,
     "Name_4": null,
     "DISREGARD": "YES",
     "Link": null,
@@ -5654,7 +5654,7 @@
     "Name_1": "MT-LBM 6MB",
     "Name_2": "PT-76 30MM",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB#Vehicle_in_service",
     "Name_5": null
@@ -5664,7 +5664,7 @@
     "Name_1": "MT-LBU",
     "Name_2": "MT-12 SA29",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LBu",
     "Name_5": null
@@ -5674,7 +5674,7 @@
     "Name_1": "MT-LBU",
     "Name_2": "AZP S-60 57MM",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LBu",
     "Name_5": null
@@ -5684,7 +5684,7 @@
     "Name_1": "MT-LBU",
     "Name_2": null,
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LBu",
     "Name_5": null
@@ -5694,7 +5694,7 @@
     "Name_1": "MT-LBU",
     "Name_2": "BM-7 PARUS",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LBu",
     "Name_5": null
@@ -5704,7 +5704,7 @@
     "Name_1": "MT-LBVM",
     "Name_2": "2M-3 25MM",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
     "Name_5": null
@@ -5714,7 +5714,7 @@
     "Name_1": "MT-LBVM",
     "Name_2": "MT-LBVMK",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
     "Name_5": null
@@ -5724,7 +5724,7 @@
     "Name_1": "MT-LBVMK",
     "Name_2": "ZU-23 2A13",
     "Name_3": "MT-LB",
-    "Name_4": "PT-76",
+    "Name_4": null,
     "DISREGARD": null,
     "Link": "https://en.wikipedia.org/wiki/MT-LB",
     "Name_5": null
@@ -6335,7 +6335,7 @@
     "Name_2": null,
     "Name_3": null,
     "Name_4": null,
-    "DISREGARD": null,
+    "DISREGARD": "YES",
     "Link": null,
     "Name_5": null
   },
